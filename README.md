@@ -27,3 +27,15 @@ for select
 to anon, authenticated
 using (true);
 ```
+
+user 에게 phone4 컬럼 추가하기(auth 스키마는 대시보드에서 read-only 이므로 sql 으로만 수정가능)
+```
+alter table auth.users
+add column phone4 text;
+```
+
+
+public.users 테이블 삭제하기
+```
+drop table public.users;
+```
